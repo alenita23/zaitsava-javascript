@@ -8,3 +8,5 @@ Task
 Given bracket sequence: [((())()(())]]
 - Can this sequence be considered correct?
 - If the answer to the previous question is “no”, then what needs to be changed in it to make it correct?
+
+Please, check the solution here -  https://alenita23.github.io/zaitsava-javascript/ 
