@@ -8,7 +8,7 @@ function MakeUpAlgorithm1() {
          document.querySelector('.inputNumber').innerHTML = 'Hello!';
          console.log("Hello!");
       }
-   };
+};
 
 function MakeUpAlgorithm2() {
    let inputName = prompt("Please, enter your name", "Peter");
@@ -20,7 +20,18 @@ function MakeUpAlgorithm2() {
       document.querySelector('.inputName').innerHTML = "There is no such name";
       console.log("There is no such name");
    }
-}
+};
+
+function MakeUpAlgorithm3() {
+   let inputRange = prompt("Please, enter any quantity of any numbers separated by ', '", "1, 2, 3, 4, 5, 6, 7, 8, 9");
+   let array = inputRange.split(', ').map(Number);
+   let outputArray = array.filter(n => n % 3 == 0);
+   let result = outputArray.join(', ').split();
+
+   document.querySelector('.inputRange').innerHTML = `${result}`;
+   console.log(`${result}`);
+};
+
 
 button1.addEventListener('click', MakeUpAlgorithm1);
 button2.addEventListener('click', MakeUpAlgorithm2);
